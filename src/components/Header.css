@@ -1,0 +1,65 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background:#1b263b;
+  color: white;
+  position: relative;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+/* Navbar default */
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Hamburger hidden on large screens */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Small screens <510px */
+@media (max-width: 580px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav {
+    display: none; /* hide links by default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #1b263b;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .nav.open {
+    display: flex; /* show links when hamburger clicked */
+  }
+
+  .nav a {
+    margin: 10px 0;
+  }
+
+  #projects{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}

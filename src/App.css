@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
+  color: white;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-evenly;
+  height: 60px;
+  border-bottom: 2px solid white;
+  background: #1b263b;
+}
+
+nav {
+  padding: 25px;
+
+}
+
+.logo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 30px;
+  color: white;
+  padding-left: 10px;
+}
+
+nav a {
+  color: white;
+  padding: 0 20px;
+  text-decoration: none;
+
+}
+
+.nav {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-bottom: 0px;
+
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+  width: calc(100vw-80px);
+}
+
+#about {
+  padding-top: 100px;
+  height: calc(100vh - 60px);
+  color: white;
+  background: #1b263b;
+  font-size: large;
+
+}
+
+#projects {
+  
+  padding-top: 100px;
+  height: calc(100vh - 80px);
+  background-color: rgb(211, 208, 208);
+
+}
+
+.card {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding-top: 30px;
+
+}
+
+#project-card {
+  background-color:  rgb(148, 146, 146);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #1b263b;
+  border-radius: 20%;
+  width: 180px;
+  height: 180px;
+}
+
+#skills {
+  
+  background: #1b263b;
+  padding-top: 100px;
+  height: calc(100vh - 60px);
+}
+
+
+#skills h1{
+  font-weight: 500;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+#project-card h3{
+  border-bottom: 1px solid #1b263b ;
+  font-size: larger;
+  color: #1b263b;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#contact{
+  background: #1b263b;
+  height: 90px;
+  border-top: 2px solid white;
+  padding-top: 0px;
+  color: white;
 }
+video{
+  top: 20px;
+  border-radius: 20%;
+}
+
+section{
+  height: auto !important;
+}
+
+@media (max-width: 580px) {
+  
+  #projects
+  {display: flex;          /* horizontal by default */
+  flex-wrap: wrap;        /* allow wrapping if many cards */
+  gap: 20px;
+  justify-content: center;}
+ 
+  .card{
+    display: flex;          /* horizontal by default */
+  flex-wrap: wrap;        /* allow wrapping if many cards */
+  gap: 20px;
+  justify-content: center;
+  }
+  
+}
+
+ @media (max-widht: 350px){
+    video{
+   width: 200px;
+    } 
+    #about{
+      height: 100vh;
+    }
+  }
+
